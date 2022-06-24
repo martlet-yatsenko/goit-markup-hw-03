@@ -5,19 +5,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Web Studio</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-		/>
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+		/>
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
-	<body>
+	<body class="section">
 		<header class="header">
 			<nav class="header-nav">
 				<a class="header-logo" href="./index.html">
@@ -35,16 +36,16 @@
 						<a class="header-link" href="/contacts">Контакты</a>
 					</li>
 				</ul>
-			</nav>
 
-			<ul class="header-group list">
-				<li class="header-element">
-					<a class="header-contact" class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-				</li>
-				<li class="header-element">
-					<a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
-				</li>
-			</ul>
+				<ul class="header-group list">
+					<li class="header-element">
+						<a class="header-contact" class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+					</li>
+					<li class="header-element">
+						<a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			<section class="hero">
@@ -53,31 +54,33 @@
 			</section>
 
 			<section class="features">
-				<h2 hidden>Наши преимущества</h2>
-				<ul class="features-list list">
-					<li class="features-item">
-						<h3 class="features-subtitle">Внимание к деталям</h3>
-						<p class="features-desc">
-							Идейные соображения, а также начало повседневной работы по формированию позиции.
-						</p>
-					</li>
-					<li class="features-item">
-						<h3 class="features-subtitle">Пунктуальность</h3>
-						<p class="features-desc">
-							Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-						</p>
-					</li>
-					<li class="features-item">
-						<h3 class="features-subtitle">Планирование</h3>
-						<p class="features-desc">
-							Равным образом консультация с широким активом в значительной степени обуславливает.
-						</p>
-					</li>
-					<li class="features-item">
-						<h3 class="features-subtitle">Современные технологии</h3>
-						<p class="features-desc">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-					</li>
-				</ul>
+				<div class="features-section">
+					<h2 hidden>Наши преимущества</h2>
+					<ul class="features-list list">
+						<li class="features-item">
+							<h3 class="features-subtitle">Внимание к деталям</h3>
+							<p class="features-desc">
+								Идейные соображения, а также начало повседневной работы по формированию позиции.
+							</p>
+						</li>
+						<li class="features-item">
+							<h3 class="features-subtitle">Пунктуальность</h3>
+							<p class="features-desc">
+								Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+							</p>
+						</li>
+						<li class="features-item">
+							<h3 class="features-subtitle">Планирование</h3>
+							<p class="features-desc">
+								Равным образом консультация с широким активом в значительной степени обуславливает.
+							</p>
+						</li>
+						<li class="features-item">
+							<h3 class="features-subtitle">Современные технологии</h3>
+							<p class="features-desc">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<section class="services">
@@ -92,7 +95,7 @@
 							height="294"
 						/>
 					</li>
-					<li class="services-item">
+					<li class="services-item services-app">
 						<img
 							class="services-img"
 							src="./images/img2.jpg"
