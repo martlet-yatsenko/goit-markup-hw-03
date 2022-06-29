@@ -9,10 +9,6 @@
 	--accent-background-color: #2f303a;
 }
 
-html {
-	box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -32,10 +28,12 @@ a {
 	text-decoration: none;
 }
 
+/* «B1» Допускается глобальный сброс стилей по селектору тега для элементов <h1>...<h6>, <p> и <ul>. */
 h1,
 h2,
 h3,
-p {
+p,
+ul {
 	margin: 0;
 }
 
@@ -45,9 +43,16 @@ p {
 	margin: 0;
 }
 
-.section {
+/* «B7» Создан общий вспомогательный класс .container для центрирования и ограничения контента по ширине. */
+/* «B8» Ширина «контейнера» соответствует макету и равна 1200px. */
+/* «B9» «Контейнер» оборачивает контент хедера, футера и секций. То есть находится внутри них. */
+.container {
 	width: 1200px;
-	margin: auto;
+	margin: 0 auto;
+}
+
+.section {
+	padding: 94px 0px;
 }
 
 .header {
@@ -55,6 +60,9 @@ p {
 }
 
 .header-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
 	width: 1230px;
@@ -84,6 +92,10 @@ p {
 	color: var(--title-text-color);
 }
 
+.header-list {
+	display: flex;
+}
+
 .header-list .current {
 	color: var(--accent-color);
 }
@@ -94,6 +106,7 @@ p {
 }
 
 .header-group {
+	display: flex;
 	letter-spacing: 0.02em;
 }
 
@@ -149,15 +162,18 @@ p {
 	border: 1px solid transparent;
 }
 
-.features-section {
-	outline: 1px solid blue;
-	margin-top: 0;
-}
-
 .features-list {
 	display: flex;
-	justify-content: center;
-	margin: 94px 0px;
+}
+
+.features-list:not(:last-child) {
+	margin-right: 30px;
+}
+
+.features-item {
+	display: block;
+	width: 270 px;
+	height: 101px;
 }
 
 .features-subtitle {
@@ -175,6 +191,8 @@ p {
 
 .services-list {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 	margin-bottom: 94px;
 }
 
@@ -187,17 +205,14 @@ p {
 	margin-bottom: 50px;
 }
 
-.services-app {
-	margin-left: 30px;
-	margin-right: 30px;
-}
-
 .team {
 	background-color: var(--second-background-color);
 }
 
 .team-list {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 	justify-content: center;
 	margin-bottom: 94px;
 }
@@ -269,7 +284,7 @@ p {
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 30px;
 	padding: 0;
 	list-style: none;
 }
