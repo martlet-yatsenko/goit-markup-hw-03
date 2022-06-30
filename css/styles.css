@@ -54,7 +54,7 @@ ul {
 
 .header {
 	background-color: var(--main-background-color);
-	border bottom: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -65,7 +65,6 @@ ul {
 
 .header-logo {
 	display: flex;
-	margin-left: 215px;
 	margin-right: 93px;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -107,6 +106,7 @@ ul {
 .header-group {
 	display: flex;
 	justify-content: flex-end;
+	padding: 32px 0px;
 	letter-spacing: 0.02em;
 }
 
@@ -129,12 +129,18 @@ ul {
 	color: var(--accent-color);
 }
 
+.header-phone {
+	margin-left: 50px;
+}
+
 .hero {
 	background-color: var(--accent-background-color);
 	color: var(--white-text-clolor);
 	display: block;
 	padding-top: 200px;
 	padding-bottom: 200px;
+	margin-left: -200px;
+	margin-right: -200px;
 }
 
 .hero-title {
@@ -147,6 +153,7 @@ ul {
 	width: 696px;
 	margin: auto;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 .hero-button {
@@ -169,11 +176,12 @@ ul {
 
 .features-list {
 	display: flex;
+	justify-content: space-between;
 }
 
 .features-item {
 	display: block;
-	width: 270 px;
+	width: 270px;
 	height: 101px;
 }
 
@@ -190,11 +198,16 @@ ul {
 	line-height: 1.7;
 }
 
+.features-desc:last-child {
+	margin-right: none;
+}
+
 .services-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
 	margin-bottom: 94px;
+	justify-content: space-between;
 }
 
 .services-title {
@@ -208,6 +221,8 @@ ul {
 
 .team {
 	background-color: var(--second-background-color);
+	margin-right: -200px;
+	margin-left: -200px;
 }
 
 .team-list {
@@ -255,9 +270,14 @@ ul {
 	background-color: var(--main-background-color);
 }
 
+.portfolio-group {
+	margin: 20px 24px;
+}
+
 .portfolio-buttons {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 50px;
 }
 
 .portfolio-btn {
@@ -313,6 +333,10 @@ ul {
 
 .footer {
 	background-color: var(--accent-background-color);
+	margin-right: -200px;
+	margin-left: -200px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -321,6 +345,11 @@ ul {
 	font-weight: 700;
 	color: var(--accent-color);
 	line-height: 1.2;
+	margin-left: 200px;
+}
+
+.footer-list {
+	margin-left: 200px;
 }
 
 .footer-logo > span {
