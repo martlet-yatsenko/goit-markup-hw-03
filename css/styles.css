@@ -43,9 +43,6 @@ ul {
 	margin: 0;
 }
 
-/* «B7» Создан общий вспомогательный класс .container для центрирования и ограничения контента по ширине. */
-/* «B8» Ширина «контейнера» соответствует макету и равна 1200px. */
-/* «B9» «Контейнер» оборачивает контент хедера, футера и секций. То есть находится внутри них. */
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -57,19 +54,19 @@ ul {
 
 .header {
 	background-color: var(--main-background-color);
+	border bottom: 1px solid #ececec;
 }
 
 .header-nav {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	margin-left: auto;
-	margin-right: auto;
-	width: 1230px;
-	outline: 2px solid blue;
+	justify-content: space-between;
 }
 
 .header-logo {
+	display: flex;
+	margin-left: 215px;
+	margin-right: 93px;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
@@ -83,6 +80,7 @@ ul {
 }
 
 .header-item {
+	margin-right: 50px;
 	line-height: 1.1;
 	font-weight: 500;
 	letter-spacing: 0.02em;
@@ -94,6 +92,7 @@ ul {
 
 .header-list {
 	display: flex;
+	justify-content: flex-start;
 }
 
 .header-list .current {
@@ -107,6 +106,7 @@ ul {
 
 .header-group {
 	display: flex;
+	justify-content: flex-end;
 	letter-spacing: 0.02em;
 }
 
@@ -132,7 +132,9 @@ ul {
 .hero {
 	background-color: var(--accent-background-color);
 	color: var(--white-text-clolor);
-	text-align: center;
+	display: block;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 .hero-title {
@@ -140,10 +142,11 @@ ul {
 	font-size: 44px;
 	line-height: 1.4;
 	letter-spacing: 0.06em;
-	margin-top: 0;
-	margin-bottom: 30px;
 	text-transform: uppercase;
-	outline: 1px solid white;
+	display: block;
+	width: 696px;
+	margin: auto;
+	margin-bottom: 30px;
 }
 
 .hero-button {
@@ -160,14 +163,12 @@ ul {
 	border-radius: 4px;
 	padding: 10px 32px;
 	border: 1px solid transparent;
+	display: block;
+	margin: auto;
 }
 
 .features-list {
 	display: flex;
-}
-
-.features-list:not(:last-child) {
-	margin-right: 30px;
 }
 
 .features-item {
