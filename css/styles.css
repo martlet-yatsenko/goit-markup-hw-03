@@ -50,7 +50,8 @@ ul {
 }
 
 .section {
-	padding: 94px 0px;
+	margin-top: 0px;
+	margin-bottom: 94px;
 }
 
 .header {
@@ -200,6 +201,10 @@ ul {
 	margin-right: none;
 }
 
+.services {
+	padding-top: 0;
+}
+
 .services-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -219,8 +224,9 @@ ul {
 
 .team {
 	background-color: var(--second-background-color);
-	margin-right: -200px;
-	margin-left: -200px;
+	padding-top: 94px;
+	padding-bottom: 94px;
+	margin-bottom: 0;
 }
 
 .team-list {
@@ -228,7 +234,6 @@ ul {
 	flex-wrap: wrap;
 	gap: 30px;
 	justify-content: center;
-	margin-bottom: 94px;
 }
 
 .team-title {
