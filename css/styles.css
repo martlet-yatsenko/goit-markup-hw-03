@@ -46,9 +46,10 @@ ul {
 .container {
 	width: 1200px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
-.section {
+section {
 	padding: 94px 0px;
 }
 
@@ -136,11 +137,8 @@ ul {
 .hero {
 	background-color: var(--accent-background-color);
 	color: var(--white-text-clolor);
-	display: block;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	margin-left: -200px;
-	margin-right: -200px;
 }
 
 .hero-title {
