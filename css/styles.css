@@ -60,11 +60,12 @@ ul {
 .header-nav {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .header-logo {
 	display: flex;
+	padding-top: 24px;
+	padding-bottom: 25px;
 	margin-right: 93px;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -105,8 +106,7 @@ ul {
 
 .header-group {
 	display: flex;
-	justify-content: flex-end;
-	padding: 32px 0px;
+	margin-left: auto;
 	letter-spacing: 0.02em;
 }
 
