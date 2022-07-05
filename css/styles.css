@@ -44,8 +44,7 @@ ul {
 }
 
 .section {
-	margin-top: 0px;
-	margin-bottom: 94px;
+	padding: 94px 0px;
 }
 
 .header {
@@ -84,6 +83,10 @@ ul {
 
 .header-item > a {
 	color: var(--title-text-color);
+}
+
+.header-item:last-child {
+	margin-right: 0px;
 }
 
 .header-list {
@@ -245,7 +248,7 @@ ul {
 
 .team-group {
 	text-align: center;
-	margin: 30px 0px;
+	padding: 30px 0px;
 }
 
 .team-item {
@@ -281,8 +284,7 @@ ul {
 .portfolio-buttons {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 20px;
-	margin-top: 94px;
+	margin-bottom: 50px;
 	gap: 8px;
 }
 
@@ -310,12 +312,11 @@ ul {
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	gap: 30px;
 }
 
 .portfolio-item {
 	background-color: var(--main-background-color);
-	margin-top: 30px;
 }
 
 .portfolio-group {
@@ -365,10 +366,19 @@ ul {
 	color: var(--white-text-clolor);
 }
 
+.footer-list > li {
+	display: block;
+	margin-bottom: 9px;
+}
+
 .footer-item {
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.7;
+}
+
+.footer-item:last-child {
+	margin-bottom: 0px;
 }
 
 .footer-address {
@@ -383,7 +393,6 @@ ul {
 .footer-contact {
 	color: var(--second-white-color);
 	display: block;
-	margin-top: 9px;
 }
 
 .footer-contact:hover,
@@ -394,7 +403,6 @@ ul {
 .footer-phone {
 	color: var(--second-white-color);
 	display: block;
-	margin-top: 9px;
 }
 
 .footer-phone:hover,
